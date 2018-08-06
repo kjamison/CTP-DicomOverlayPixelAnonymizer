@@ -1,0 +1,23 @@
+<TemplateDefinitions>
+
+	<Components>
+    <Processor>
+      <attr name="name" required="yes" default="DicomOverlayPixelAnonymizer"/>
+      <attr name="class" required="yes" default="edu.cornell.med.ideal.DicomOverlayPixelAnonymizer" editable="no"/>
+      <attr name="root" required="yes" default="roots/DicomOverlayPixelAnonymizer"/>
+      <attr name="script" required="yes" default="scripts/DicomOverlayPixelAnonymizer.script">
+        <helptext>The script file containing document signatures and blanking regions</helptext>
+      </attr>
+      <attr name="quarantine" required="yes" default="quarantines/DicomOverlayPixelAnonymizer"/>
+      <attr name="quarantineTimeDepth" required="no" default="0"/>
+      <attr name="log" required="no" default="no" options="yes|no">
+        <helptext>Log the matching signature</helptext>
+      </attr>
+      <attr name="test" required="no" default="no" options="yes|no">
+        <helptext>Test mode causes regions to be highlighted rather than set to black</helptext>
+      </attr>
+    </Processor>
+
+	</Components>
+
+</TemplateDefinitions>
